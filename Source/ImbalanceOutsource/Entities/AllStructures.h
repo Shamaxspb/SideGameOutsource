@@ -7,43 +7,46 @@
 #include "AllStructures.generated.h"
 
 USTRUCT(BlueprintType)
-struct FEX_Fight_Tier
+struct FEX_Tier
 {
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UEX_TierEnemyData* TierEnemySet;
+	UTierEnemySet* TierEnemySet;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=500, ClampMin=0, ClampMax=500))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float TierTotalPower;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=1, ClampMin=0, ClampMax=1))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float EliteProbability;
 };
 
 USTRUCT(BlueprintType)
-struct FEX_Fight_Phase
+struct FEX_Phase
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=1, ClampMin=0, ClampMax=1))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float FinishFraction;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=1, ClampMin=0, ClampMax=1))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float PhaseTension;
 };
 
 USTRUCT(BlueprintType)
-struct FEX_Fight : public FTableRowBase
+struct FEX_FightStructure : public FTableRowBase
 {
 	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	EEX_MapSelectionType MapSelectionType;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<UWorld*> PossibleMaps;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FEX_Fight_Tier> TierList;
+	TArray<FEX_Tier> TierList;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FEX_Fight_Phase> PhaseList;
+	TArray<FEX_Phase> PhaseList;
 };

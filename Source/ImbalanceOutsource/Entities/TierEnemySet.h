@@ -11,12 +11,12 @@
  * 
  */
 UCLASS()
-class IMBALANCEOUTSOURCE_API UEX_TierEnemyData : public UDataAsset
+class IMBALANCEOUTSOURCE_API UTierEnemySet : public UDataAsset
 {
 	GENERATED_BODY()
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<TSoftClassPtr<AEnemyBase>> EnemyTypes;
+	TArray<TSubclassOf<AEnemyBase>> EnemyTypes;
 	
 };
