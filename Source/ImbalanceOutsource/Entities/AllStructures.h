@@ -14,11 +14,13 @@ struct FEX_Fight_Tier
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UEX_TierEnemyData* TierEnemySet;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=500, ClampMin=0, ClampMax=500))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=500, ClampMin=0))
 	float TierTotalPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=1, ClampMin=0, ClampMax=1))
 	float EliteProbability;
+
+	
 };
 
 USTRUCT(BlueprintType)

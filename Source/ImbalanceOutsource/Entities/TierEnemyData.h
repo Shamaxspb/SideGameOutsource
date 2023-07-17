@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "EnemyBase.h"
+#include "Enemies/EnemyBase.h"
 #include "Engine/DataAsset.h"
 #include "TierEnemyData.generated.h"
 
