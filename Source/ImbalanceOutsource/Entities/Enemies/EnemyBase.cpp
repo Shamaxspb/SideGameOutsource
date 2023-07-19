@@ -5,21 +5,21 @@
 
 
 // Sets default values
-AEnemyBase::AEnemyBase()
+AEX_EnemyBase::AEX_EnemyBase()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
 // Called when the game starts or when spawned
-void AEnemyBase::BeginPlay()
+void AEX_EnemyBase::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AEnemyBase::Tick(float DeltaTime)
+void AEX_EnemyBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }

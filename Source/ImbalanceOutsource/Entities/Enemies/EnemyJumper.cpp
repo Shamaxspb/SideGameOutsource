@@ -5,27 +5,27 @@
 
 
 // Sets default values
-AEnemyJumper::AEnemyJumper()
+AEX_EnemyJumper::AEX_EnemyJumper()
 {
 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
 // Called when the game starts or when spawned
-void AEnemyJumper::BeginPlay()
+void AEX_EnemyJumper::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AEnemyJumper::Tick(float DeltaTime)
+void AEX_EnemyJumper::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
 
 // Called to bind functionality to input
-void AEnemyJumper::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AEX_EnemyJumper::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }

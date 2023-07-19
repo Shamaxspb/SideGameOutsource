@@ -17,6 +17,5 @@ class IMBALANCEOUTSOURCE_API UEX_TierEnemyData : public UDataAsset
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<TSoftClassPtr<AEnemyBase>> EnemyTypes;
-	
+	TArray<TSoftClassPtr<AEX_EnemyBase>> EnemyClasses;
 };

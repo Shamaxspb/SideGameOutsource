@@ -4,16 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "ImbalanceOutsource/Entities/AllEnums.h"
 #include "EnemyBase.generated.h"
 
 UCLASS()
-class IMBALANCEOUTSOURCE_API AEnemyBase : public ACharacter
+class IMBALANCEOUTSOURCE_API AEX_EnemyBase : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	AEnemyBase();
+	AEX_EnemyBase();
 
 protected:
 	// Called when the game starts or when spawned
@@ -22,5 +23,14 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
+
+public:
+	UPROPERTY(EditAnywhere)
+	EEX_EnemyMovementType MovementType;
+
+	UPROPERTY(EditAnywhere)
+	bool bElite;
+
+	UPROPERTY(EditAnywhere)
+	float PowerCost;
 };

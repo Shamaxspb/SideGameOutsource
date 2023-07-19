@@ -19,8 +19,6 @@ struct FEX_Fight_Tier
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=1, ClampMin=0, ClampMax=1))
 	float EliteProbability;
-
-	
 };
 
 USTRUCT(BlueprintType)
@@ -28,6 +26,9 @@ struct FEX_Fight_Phase
 {
 	GENERATED_BODY()
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(ClampMin=1))
+	int32 PhaseNumber;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(UIMin=0, UIMax=1, ClampMin=0, ClampMax=1))
 	float FinishFraction;
 

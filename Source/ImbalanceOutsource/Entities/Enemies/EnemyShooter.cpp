@@ -5,27 +5,27 @@
 
 
 // Sets default values
-AEnemyShooter::AEnemyShooter()
+AEX_EnemyShooter::AEX_EnemyShooter()
 {
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
 // Called when the game starts or when spawned
-void AEnemyShooter::BeginPlay()
+void AEX_EnemyShooter::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AEnemyShooter::Tick(float DeltaTime)
+void AEX_EnemyShooter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
 
 // Called to bind functionality to input
-void AEnemyShooter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AEX_EnemyShooter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }

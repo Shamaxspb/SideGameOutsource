@@ -7,13 +7,13 @@
 #include "EnemyShooter.generated.h"
 
 UCLASS()
-class IMBALANCEOUTSOURCE_API AEnemyShooter : public AEnemyBase
+class IMBALANCEOUTSOURCE_API AEX_EnemyShooter : public AEX_EnemyBase
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	AEnemyShooter();
+	AEX_EnemyShooter();
 
 protected:
 	// Called when the game starts or when spawned
